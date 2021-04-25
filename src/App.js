@@ -7,14 +7,23 @@ class App extends React.Component{
   constructor(){
     super();
     this.state={
+      name: "Ali",
       counter : 1,
     }
+  }
+
+  changename=()=>{
+    this.setState({
+      name: "Eslam"
+    })
   }
   render(){
     return (
       <div>
         <Header />
-        <div className="container my-3" id="container">      
+        <div className="container my-3" id="container">   
+        <button className="btn btn-danger" onClick={this.changename}>Change Name</button>
+        <h3>{this.state.name}</h3>   
          <Counter />
         </div>
         <Footer />
