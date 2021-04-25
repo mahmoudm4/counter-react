@@ -7,74 +7,14 @@ class App extends React.Component{
   constructor(){
     super();
     this.state={
-      name : "Ahmed",
       counter : 1,
-    }
-    // this.changeName = this.changeName.bind(this)
-  }
-  // changeName(){
-  //   this.setState({
-  //     name : 'Eslam'
-  //   })
-  // }
-
-
-  // changeName=()=>{
-  //   this.setState({
-  //     name : 'Mahmoud'
-  //   })
-  // }
-  increase = ()=>{
-    this.setState({
-      counter: this.state.counter+1
-    })
-  }
-  decrease = ()=>{
-    this.setState({
-      counter: this.state.counter-1
-    })
-  }
-
-  // changeCounter=(op)=>{
-  //   if(op == '+')
-  //   {
-  //     this.setState({
-  //       counter: this.state.counter+1
-  //     })
-  //   }
-  //   else if(op == '-'){
-  //     this.setState({
-  //       counter: this.state.counter-1
-  //     })
-  //   }
-  // }
-
-  
-  changeCounter(op){
-    if(op == '+')
-    {
-      this.setState({
-        counter: this.state.counter+1
-      })
-    }
-    else if(op == '-'){
-      this.setState({
-        counter: this.state.counter-1
-      })
     }
   }
   render(){
     return (
       <div>
         <Header />
-        <div className="container my-3" id="container">
-          
-          {/* <button onClick={this.changeName}>Change Name</button> */}
-          {/* Welcome {this.state.name} */}
-  {/* 
-          <button onClick={this.increase}>Increase</button>
-          <button onClick={this.decrease}>Decrease</button> */}
-         
+        <div className="container my-3" id="container">      
          <Counter />
         </div>
         <Footer />
